@@ -1,24 +1,68 @@
-# NgxIsStandalone
+# Ngx Is Standalone
 
-This library was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.3.
+Is standalone for angular
 
-## Code scaffolding
+[![License MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/damingerdai/ngx-is-standalone/blob/master/LICENSE)
 
-Run `ng generate component component-name --project ngx-is-standalone` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module --project ngx-is-standalone`.
-> Note: Don't forget to add `--project ngx-is-standalone` or else it will be added to the default project in your `angular.json` file. 
+## Install
 
-## Build
+if you use npm:
 
-Run `ng build ngx-is-standalone` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+npm install ngx-is-standalone
+```
 
-## Publishing
+if you use yarn:
 
-After building your library with `ng build ngx-is-standalone`, go to the dist folder `cd dist/ngx-is-standalone` and run `npm publish`.
+```bash
+yarn add ngx-is-standalone
+```
 
-## Running unit tests
+## Feedbacks
 
-Run `ng test ngx-is-standalone` to execute the unit tests via [Karma](https://karma-runner.github.io).
+https://github.com/damingerdai/ngx-is-standalone/issues
 
-## Further help
+## Simple Configuration
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```ts
+import { NgxIsStandaloneModule } from 'ngx-is-standalone';
+
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
+
+import { AppComponent } from './app.component';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    NgxIsStandaloneModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+
+## Usage
+
+```ts
+import { Component } from '@angular/core';
+import { NgxIsStandaloneService } from 'ngx-is-standalone';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
+})
+export class AppComponent {
+
+  public get isStandalone() {
+    return this.ngxIsStandaloneService.isStandalone;
+  }
+
+  constructor(private ngxIsStandaloneService: NgxIsStandaloneService) { }
+}
+```
