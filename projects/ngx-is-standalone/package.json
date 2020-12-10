@@ -1,9 +1,28 @@
 {
   "name": "ngx-is-standalone",
   "version": "0.0.0",
+  "description": "is standalone for angular",
+  "contributors": [
+    {
+      "name": "Arthur Ming",
+      "email": "mingguobin@live.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/damingerdai/ngx-is-standalone.git"
+  },
+  "keywords": [
+    "angular",
+    "is-standalone",
+    "typescript"
+  ],
+  "author": "Arthur Ming",
+  "license": "MIT",
+  "homepage": "https://github.com/damingerdai/ngx-is-standalone",
   "peerDependencies": {
-    "@angular/common": "^11.0.3",
-    "@angular/core": "^11.0.3"
+    "@angular/common": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0",
+    "@angular/core": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0 || ^9.0.0 || ^10.0.0 || ^11.0.0"
   },
   "dependencies": {
     "tslib": "^2.0.0"
