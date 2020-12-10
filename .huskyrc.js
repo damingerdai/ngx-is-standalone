@@ -6,6 +6,7 @@ module.exports = {
       "npm run lint",
       "npm run build:lib"
 		]),
-		"pre-commit": tasks([]),
+    "pre-commit": tasks([]),
+    "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
 	},
 };
