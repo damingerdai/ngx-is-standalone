@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build ngx-is-standalone-demo",
+    "build:lib": "ng build ngx-is-standalone --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
