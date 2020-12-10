@@ -8,7 +8,10 @@
     "build:lib": "ng build ngx-is-standalone --prod",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "cp": "copyfiles ./LICENSE ./dist/ngx-is-standalone",
+    "release": "cd ./projects/ngx-is-standalone && standard-version",
+    "publish": "npm run build:lib && npm run cp && npm publish dist/ngx-is-standalone"
   },
   "author": "Arthur Ming",
   "license": "MIT",
@@ -25,6 +28,7 @@
     "@angular/platform-browser-dynamic": "~11.0.3",
     "@angular/router": "~11.0.3",
     "rxjs": "~6.6.0",
+    "standard-version": "^9.0.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },
@@ -37,6 +41,7 @@
     "@types/jasmine": "~3.6.0",
     "@types/node": "^12.11.1",
     "codelyzer": "^6.0.0",
+    "copyfiles": "^2.4.1",
     "husky": "^4.3.5",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
