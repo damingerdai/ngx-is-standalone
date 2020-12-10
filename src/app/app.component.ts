@@ -9,7 +9,7 @@ import { NgxIsStandaloneService } from 'ngx-is-standalone';
 export class AppComponent {
   title = 'ngx-is-standalone';
 
-  public get isStandalone() {
+  public get standalone(): boolean {
     return this.ngxIsStandaloneService.isStandalone;
   }
 

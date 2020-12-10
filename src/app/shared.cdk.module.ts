@@ -16,38 +16,38 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 
 @NgModule({
-	imports: [
-		CommonModule,
-		A11yModule,
-		BidiModule,
-		DragDropModule,
-		LayoutModule,
-		ObserversModule,
-		OverlayModule,
-		PlatformModule,
-		PortalModule,
-		ScrollingModule,
-		CdkStepperModule,
-		CdkTableModule,
-		TextFieldModule,
-		CdkTreeModule,
-		ClipboardModule
-	],
-	exports: [
-		A11yModule,
-		BidiModule,
-		DragDropModule,
-		LayoutModule,
-		ObserversModule,
-		OverlayModule,
-		PlatformModule,
-		PortalModule,
-		ScrollingModule,
-		CdkStepperModule,
-		CdkTableModule,
-		TextFieldModule,
-		CdkTreeModule,
-		ClipboardModule
-	]
+  imports: [
+    CommonModule,
+    A11yModule,
+    BidiModule,
+    DragDropModule,
+    LayoutModule,
+    ObserversModule,
+    OverlayModule,
+    PlatformModule,
+    PortalModule,
+    ScrollingModule,
+    CdkStepperModule,
+    CdkTableModule,
+    TextFieldModule,
+    CdkTreeModule,
+    ClipboardModule
+  ],
+  exports: [
+    A11yModule,
+    BidiModule,
+    DragDropModule,
+    LayoutModule,
+    ObserversModule,
+    OverlayModule,
+    PlatformModule,
+    PortalModule,
+    ScrollingModule,
+    CdkStepperModule,
+    CdkTableModule,
+    TextFieldModule,
+    CdkTreeModule,
+    ClipboardModule
+  ]
 })
-export class SharedCdkModule {}
+export class SharedCdkModule { }
