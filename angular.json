@@ -117,6 +117,15 @@
               "devServerTarget": "ngx-is-standalone-demo:serve:production"
             }
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     },
@@ -145,12 +154,22 @@
             "tsConfig": "projects/ngx-is-standalone/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-is-standalone/karma.conf.js"
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-is-standalone/**/*.ts",
+              "projects/ngx-is-standalone/**/*.html"
+            ]
+          }
         }
       }
     }
   },
   "defaultProject": "ngx-is-standalone-demo",
   "cli": {
-    "analytics": "9dd696d2-02e0-46e6-b5b2-8b7be001a6fe"
+    "analytics": "9dd696d2-02e0-46e6-b5b2-8b7be001a6fe",
+    "defaultCollection": "@angular-eslint/schematics"
   }
 }
