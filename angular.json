@@ -167,9 +167,10 @@
       }
     }
   },
-  "defaultProject": "ngx-is-standalone-demo",
   "cli": {
     "analytics": "9dd696d2-02e0-46e6-b5b2-8b7be001a6fe",
-    "defaultCollection": "@angular-eslint/schematics"
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
