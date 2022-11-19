@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/damingerdai/ngx-is-standalone/compare/v0.1.1...v0.2.0) (2022-11-19)
+
+
+### Features
+
+* bump angular v15 ([8895394](https://github.com/damingerdai/ngx-is-standalone/commit/88953946649a04526f29209946f52c3d3843c41e))
+
 ### [0.1.1](https://github.com/damingerdai/ngx-is-standalone/compare/v0.1.0...v0.1.1) (2022-06-03)
 
 ## [0.1.0](https://github.com/damingerdai/ngx-is-standalone/compare/v0.0.2...v0.1.0) (2021-11-11)
