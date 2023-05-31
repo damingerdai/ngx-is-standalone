@@ -10,7 +10,7 @@ export class NgxIsStandaloneService {
   }
 
   constructor(
-    // eslint-disable-next-line  @typescript-eslint/naming-convention, no-underscore-dangle, id-blacklist, id-match
+    // eslint-disable-next-line no-underscore-dangle, id-blacklist, id-match
     @Optional() @Inject(DOCUMENT) private _document: any,
   ) {}
 
