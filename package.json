@@ -14,7 +14,7 @@
     "release:patch": "cd ./projects/ngx-is-standalone && standard-version --release-as patch",
     "release:minor": "cd ./projects/ngx-is-standalone && standard-version --release-as minor",
     "release:major": "cd ./projects/ngx-is-standalone && standard-version --release-as major",
-    "publish": "npm run build:lib && npm run cp && npm publish dist/ngx-is-standalone",
+    "publish": "npm run build:lib && npm run cp && npm publish dist/ngx-is-standalone/",
     "prepare": "husky install"
   },
   "author": "Arthur Ming",
